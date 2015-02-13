@@ -12,7 +12,7 @@ public class Main {
 		fileManager.readLineFromlog("src/main/resources/input.log");
 
 		LogAnalyzer test = new LogAnalyzer();
-		test.splitInputLogToData();
+		test.analyzeData();
 		
 		fileManager.writeResultToLog("src/main/resources/output.log");
 	}
