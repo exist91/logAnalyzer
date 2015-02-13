@@ -18,7 +18,7 @@ public class ResultStorage {
 
 		inputLogStorage.add(readLine);
 	}
-	
+
 	protected List<String> getInputLogStorage() {
 		return inputLogStorage;
 	}

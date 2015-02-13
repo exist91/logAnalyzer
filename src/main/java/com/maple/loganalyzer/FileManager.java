@@ -17,12 +17,12 @@ public class FileManager {
 	public void readLineFromlog(String filename) throws IOException {
 
 		String temp;
-		ResultStorage resultStorage = ResultStorage.getStorage();
+		ResultStorage storage = ResultStorage.getStorage();
 
 		BufferedReader fileInput = new BufferedReader(new FileReader(filename));
 
 		while ((temp = fileInput.readLine()) != null) {
-			resultStorage.addInputLog(temp);
+			storage.addInputLog(temp);
 		}
 
 		fileInput.close();
@@ -39,7 +39,7 @@ public class FileManager {
 		// System.setErr(ps);
 
 		// 출력할 것 여기에
-		
+
 		System.setOut(sysout);
 
 		ps.close();

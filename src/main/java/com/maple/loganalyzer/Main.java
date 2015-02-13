@@ -6,13 +6,13 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 
-	
 		FileManager fileManager = new FileManager();
-		//ResultStorage resultStorage = ResultStorage.getStorage();
+		// ResultStorage resultStorage = ResultStorage.getStorage();
 
 		fileManager.readLineFromlog("src/main/resources/input.log");
-		
-		
+
+		LogAnalyzer test = new LogAnalyzer();
+		test.splitInputLogToData();
 		
 		fileManager.writeResultToLog("src/main/resources/output.log");
 	}
