@@ -37,6 +37,5 @@ public class LogAnalyzer {
 
 			storage.storeData(splitInputLogToData(line));
 		}
-
 	}
 }
